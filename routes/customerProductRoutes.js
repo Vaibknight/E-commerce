@@ -9,6 +9,6 @@ const authenticate = require("../middleware/authenticate");
 router.get("/", authenticate, productController.getAllProdcuts);
 router.get("/Allproducts", productController.fetchAllProducts);
 
-router.get("/id/:id", authenticate, productController.findProductById);
+router.get("/id/:id", productController.findProductById);
 
 module.exports = router;
