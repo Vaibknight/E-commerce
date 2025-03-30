@@ -29,6 +29,8 @@ app.get("/", (req, res) => {
     .send({ message: "welcome to ecommerce api ", status: true });
 });
 
+var a = "abc";
+
 const mongodbUrl = process.env.DBURL;
 
 main()
