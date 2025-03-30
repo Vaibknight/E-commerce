@@ -19,7 +19,7 @@ const createPaymentLink = async (orderId) => {
         email: true,
       },
       reminder_enable: true,
-      callback_url: `http://localhost:5173/payment/${orderId}`,
+      callback_url: `https://e-commerce-8uqv.onrender.com/payment/${orderId}`,
       callback_method: "get",
     };
 
